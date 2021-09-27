@@ -6,3 +6,33 @@
  * - Create several objects using the class.
  * - Test the objecs by calling their properties and using their methods in the console.
  */
+
+function Backpack(
+name,
+ volume,
+ color,
+ pocketNum,
+ strapLengthL,
+ strapLengthR,
+ lidOpen
+ ){
+  this.name=name;
+    this.volume=volume;
+  this.color= color;
+  this.pocketNum= pocketNum;
+  this.strapLength = [
+left: strapLengthL,
+    right: strapLengthR,
+    };
+this.lidOpen = lidOpen;
+this.toggleLid = function(lidStatus){
+  this.lidOpen = lidStatus;
+};
+this.newStrapLength = function (lengthLeft , lengthRight){
+  this.strapLength.left = lengthLeft;
+  this.strapLength.right = lengthRight;
+}
+}
+
+export default Backpack;
+  
